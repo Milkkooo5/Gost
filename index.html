@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Индекс к коллоквиуму ССПО</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d2330;--muted:#667085;--line:#e3e6eb;--accent:#2f5bd3;--ok:#e8f5ec;--okt:#17663a;--warn:#fff4e0;--warnt:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14161b;--card:#1d2027;--text:#e6e8ec;--muted:#9aa3b2;--line:#2c313b;--accent:#7ea2ff;--ok:#16301f;--okt:#7fd6a0;--warn:#33280f;--warnt:#f0c060}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:24px 16px 60px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 18px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;display:flex;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:16px}
+.bar input{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:15px}
+.bar button{padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;font-size:14px}
+.bar button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+nav a{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none}
+nav a:hover{border-color:var(--accent)}
+section{margin-bottom:26px}
+h2{font-size:18px;margin:0 0 10px}
+h2 small{color:var(--muted);font-weight:400;font-size:13px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.qt{font-weight:600}
+.src{font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
+.ans{margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--ok);color:var(--okt)}
+.why{margin-top:6px;color:var(--muted);font-size:14px}
+.warn{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--warn);color:var(--warnt);margin-left:6px;font-weight:600}
+.hidden-ans .ans,.hidden-ans .why{display:none}
+.hidden-ans .q{cursor:pointer}
+.hidden-ans .q.open .ans,.hidden-ans .q.open .why{display:block}
+.note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.note ul{margin:6px 0 0;padding-left:20px}
+.empty{color:var(--muted);display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Стандартизация и сертификация ПО — индекс к коллоквиуму</h1>
+<p class="sub">20 вопросов с теста и коллоквиума, сгруппированы по разделам пособия. <span class="warn">⚠</span> — ответа нет в пособии, сверить с лекциями.</p>
+
+<div class="bar">
+<input id="s" type="search" placeholder="Поиск по вопросам и ответам…">
+<button id="mode">Скрыть ответы</button>
+</div>
+
+<nav id="nav"></nav>
+<p class="empty" id="empty">Ничего не найдено.</p>
+
+<div id="content">
+
+<section id="s21"><h2>2.1 Определения и документы</h2>
+<div class="q"><div class="qt">Межгосударственный стандарт — это стандарт, который…<span class="src">Тест</span></div>
+<div class="ans"><b>a.</b> Принят Межгосударственным советом и действует в нескольких странах</div>
+<div class="why">ГОСТ → МГС/EASC → межгосударственный (региональный) уровень.</div></div>
+<div class="q"><div class="qt">Что относится к объекту стандартизации?<span class="src">Тест, в.10</span></div>
+<div class="ans"><b>b.</b> Всё, что можно унифицировать: материалы, компоненты, оборудование, системы, правила, процедуры, методы, функции</div>
+<div class="why">Варианты со словом «только» — ловушки.</div></div>
+<div class="q"><div class="qt">Чем СТО отличается от ТУ?<span class="src">Коллоквиум, в.5</span></div>
+<div class="ans"><b>b.</b> СТО регулирует более общие процессы и виды продукции, ТУ устанавливает требования к единичному продукту или услуге</div>
+<div class="why">ТУ — требования к конкретной продукции и способы контроля.</div></div>
+</section>
+
+<section id="s23"><h2>2.3 Обозначения и степень соответствия</h2>
+<div class="q"><div class="qt">ГОСТ Р ИСО/МЭК 12207-2010 является примером…<span class="src">Тест, в.1</span></div>
+<div class="ans"><b>c.</b> Прямого применения идентичного международного стандарта</div>
+<div class="why">«ИСО/МЭК» встроено в номер без скобок → IDT к ISO/IEC 12207:2008.</div></div>
+<div class="q"><div class="qt">Национальный стандарт модифицирован по отношению к международному — значит, он…<span class="src">Тест, в.9</span></div>
+<div class="ans"><b>d.</b> Содержит изменения или дополнительные требования, отражающие национальные особенности</div>
+<div class="why">MOD = идентифицированные технические отклонения.</div></div>
+<div class="q"><div class="qt">Способ применения международного стандарта в качестве национального без изменений называется…<span class="src">Тест, в.4</span></div>
+<div class="ans"><b>c.</b> Метод обложки</div>
+<div class="why">Термин из ПР1.</div></div>
+<div class="q"><div class="qt">Что будет регистрационным номером в ГОСТ 1.5-2001?<span class="src">Тест, в.5</span></div>
+<div class="ans"><b>b.</b> 1.5</div>
+<div class="why">1 — комплекс, 5 — порядковый номер, 2001 — год. Аналогично «12207» в 12207-2010.</div></div>
+<div class="q"><div class="qt">Что иллюстрирует «ГОСТ Р 58539-2019 (ИСО/МЭК 19763-1:2015)»?<span class="src">Тест</span><span class="warn">⚠</span></div>
+<div class="ans"><b>b.</b> Национальный стандарт, модифицированный по отношению к международному</div>
+<div class="why">ГОСТ Р — национальный. Международный номер в скобках после года — признак MOD; у IDT он встроен в номер. Правила скобок в пособии нет.</div></div>
+</section>
+
+<section id="s3"><h2>3 Органы и комитеты</h2>
+<div class="q"><div class="qt">Главная цель создания комитета ISO/IEC JTC 1?<span class="src">Тест, в.8</span></div>
+<div class="ans"><b>a.</b> Формирование системы базовых стандартов в области ИТ и их расширений</div>
+<div class="why">JTC 1 — объединённый технический комитет по ИТ, создан в 1987 г.</div></div>
+<div class="q"><div class="qt">Какие стандарты относятся к региональным? (несколько)<span class="src">Коллоквиум, в.7</span></div>
+<div class="ans"><b>a, b, e</b> — CENELEC, ГОСТ (МГС), CEN</div>
+<div class="why">ISO и IEC — международные.</div></div>
+</section>
+
+<section id="s4"><h2>4 Модели ЖЦ</h2>
+<div class="q"><div class="qt">Какие существуют модели ЖЦ ПС? (несколько)<span class="src">Тест, в.11</span></div>
+<div class="ans"><b>a, d</b> — каскадная, спиральная</div>
+<div class="why">«Круговая», «вертикальная», «свободная», «линейная» — дистракторы.</div></div>
+</section>
+
+<section id="s51"><h2>5.1 Группы процессов 12207-2010</h2>
+<div class="q"><div class="qt">В какой группе процессов 12207-2010 находятся верификация и валидация?<span class="src">Тест, в.3</span></div>
+<div class="ans"><b>d.</b> В процессах поддержки программных средств</div>
+<div class="why">Группа «Поддержка ПО»: документация, конфигурация, гарантия качества, верификация, валидация, ревизия, аудит, решение проблем.</div></div>
+</section>
+
+<section id="s61"><h2>6.1 Требования</h2>
+<div class="q"><div class="qt">Порядок подпроцессов разработки требований<span class="src">Коллоквиум, в.2</span></div>
+<div class="ans"><b>a.</b> Выявление и сбор → Анализ → Документирование → Утверждение</div>
+<div class="why">Сначала собрать, потом проанализировать, оформить и согласовать.</div></div>
+<div class="q"><div class="qt">В каком порядке бизнес-аналитик выявляет бизнес-, пользовательские и функциональные требования?<span class="src">Коллоквиум, в.3</span><span class="warn">⚠</span></div>
+<div class="ans"><b>d.</b> Нет правильного ответа</div>
+<div class="why">Правильно: бизнес → пользовательские → функциональные. Такого варианта среди ответов нет.</div></div>
+</section>
+
+<section id="s9"><h2>9 Сертификация</h2>
+<div class="q"><div class="qt">Сертификация ФСТЭК проводится не по техрегламентам, а по требованиям…<span class="src">Коллоквиум, в.6</span><span class="warn">⚠</span></div>
+<div class="ans"><b>c.</b> Прописанным в приказе ФСТЭК России от 3 апреля 2018 г. № 55</div>
+<div class="why">Приказ № 55 утвердил Положение о системе сертификации средств защиты информации.</div></div>
+<div class="q"><div class="qt">Что НЕ попадает под цели и принципы сертификации качества предприятий и программных продуктов?<span class="src">Тест, в.4</span><span class="warn">⚠</span></div>
+<div class="ans"><b>c.</b> Перевод и внедрение профилей стандартов при сертификации сотрудников</div>
+<div class="why">Сертифицируют продукты, процессы и СМК, а не сотрудников. Остальные пункты — штатные цели (Л3).</div></div>
+</section>
+
+<section id="s10"><h2>10 Интеллектуальная собственность</h2>
+<div class="q"><div class="qt">Что относится к «литеральным» элементам программы для ЭВМ?<span class="src">Коллоквиум, в.16</span></div>
+<div class="ans"><b>d.</b> Исходный код и промежуточные формы (псевдокод, объектный код)</div>
+<div class="why">Интерфейс, изображения и звуки — нелитеральные (аудиовизуальные) элементы.</div></div>
+<div class="q"><div class="qt">Правовые последствия использования нелицензионного ПО (несколько)<span class="src">Коллоквиум, в.18</span></div>
+<div class="ans"><b>a, c, d</b> — возмещение убытков (ГК РФ), уголовное наказание (ст. 146, 272, 273 УК), штрафы (ст. 7.12 КоАП)</div>
+<div class="why">b неверно: лишение свободы не «обязательное».</div></div>
+<div class="q"><div class="qt">По какой статье УК квалифицируются действия «чёрных внедренцев» по взлому защиты ПО?<span class="src">Коллоквиум, в.9</span><span class="warn">⚠</span></div>
+<div class="ans"><b>a.</b> Статья 272 (неправомерный доступ к компьютерной информации)</div>
+<div class="why">Взлом защиты = неправомерный доступ. Если в лекции 2 формулировка связана с пиратским распространением — ст. 146. Сверить.</div></div>
+</section>
+
+<section id="sx"><h2>Нет в пособии <small>— ГОСТ Р ИСО/МЭК ТО 9294-93</small></h2>
+<div class="q"><div class="qt">Целью стандарта является оказание помощи в… (несколько)<span class="src">Тест, в.5</span><span class="warn">⚠</span></div>
+<div class="ans"><b>a, b, e, f</b> — планы документирования, стратегия документирования, процедуры документирования, стандартизация</div>
+<div class="why">9294 помогает руководителям определить стратегии, стандарты, процедуры, ресурсы и планы документирования. c (анализ рынка) — точно нет; d (перечень документов) — спорно.</div></div>
+</section>
+
+<section id="srep"><h2>Добрать к ответу</h2>
+<div class="note"><ul>
+<li>«ГОСТ Р ИСО/МЭК 12207-2010» — IDT; «ГОСТ Р 58539-2019 (ИСО/МЭК 19763-1:2015)» — MOD.</li>
+<li>Уровни требований: бизнес → пользовательские → функциональные (+ нефункциональные).</li>
+<li>УК РФ: 146 — авторские права, 272 — неправомерный доступ, 273 — вредоносные программы; КоАП 7.12.</li>
+<li>ФСТЭК: приказ № 55 от 03.04.2018.</li>
+<li>Повторить в первую очередь: раздел 5 (7 / 4 / 3 группы), 2.3 (IDT/MOD), 6.2 (верификация/валидация), 13.</li>
+</ul></div>
+</section>
+
+</div>
+</div>
+<script>
+const content=document.getElementById('content'),nav=document.getElementById('nav'),s=document.getElementById('s'),btn=document.getElementById('mode'),empty=document.getElementById('empty');
+content.querySelectorAll('section').forEach(sec=>{const a=document.createElement('a');a.href='#'+sec.id;a.textContent=sec.querySelector('h2').firstChild.textContent.trim();nav.appendChild(a);});
+s.addEventListener('input',()=>{const t=s.value.trim().toLowerCase();let any=false;
+content.querySelectorAll('section').forEach(sec=>{let vis=false;const items=sec.querySelectorAll('.q,.note');items.forEach(q=>{const m=!t||q.textContent.toLowerCase().includes(t);q.style.display=m?'':'none';if(m)vis=true;});sec.style.display=vis?'':'none';if(vis)any=true;});
+empty.style.display=any?'none':'block';});
+btn.addEventListener('click',()=>{const on=content.classList.toggle('hidden-ans');btn.classList.toggle('on',on);btn.textContent=on?'Показать ответы':'Скрыть ответы';content.querySelectorAll('.q.open').forEach(q=>q.classList.remove('open'));});
+content.addEventListener('click',e=>{if(!content.classList.contains('hidden-ans'))return;const q=e.target.closest('.q');if(q)q.classList.toggle('open');});
+</script>
+</body>
+</html>
